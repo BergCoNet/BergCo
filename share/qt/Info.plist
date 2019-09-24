@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist SYSTEM "file://localhost/System/Library/DTDs/PropertyList.dtd">
+<plist version="0.9">
+<dict>
+	<key>CFBundleIconFile</key>
+	<string>bergco.icns</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleGetInfoString</key>
+	<string>Bergco-Qt</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleExecutable</key>
+	<string>Bergco-Qt</string>
+	<key>CFBundleIdentifier</key>
+	<string>co.bergco.Bergco-Qt</string>
+        <key>CFBundleURLTypes</key>
+        <array>
+          <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLName</key>
+            <string>co.bergco.BergcoPayment</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+              <string>bergco</string>
+            </array>
+          </dict>
+        </array>
+        <key>LSAppNapIsDisabled</key>
+          <string>True</string>
+</dict>
+</plist>

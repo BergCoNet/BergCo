@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=BERG
+Comment=BERG P2P Cryptocurrency
+Comment[fr]=BERG, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=BERG, eşten eşe kriptografik sanal para birimi
+Exec=bergco-qt %u
+Terminal=false
+Type=Application
+Icon=bergco128
+MimeType=x-scheme-handler/bergco;
+Categories=Office;Finance;
