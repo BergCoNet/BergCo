@@ -2743,7 +2743,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bergco Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 12088 or testnet: 24677)</source>
+        <source>Listen for connections on &lt;port&gt; (default: 12088 or testnet: 22088)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2793,7 +2793,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bergco Alert&quot; admin@foo.c
     </message>
     <message>
         <location line="+65"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 12089 or testnet: 24676)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 12089 or testnet: 22089)</source>
         <translation type="unfinished"/>
     </message>
     <message>

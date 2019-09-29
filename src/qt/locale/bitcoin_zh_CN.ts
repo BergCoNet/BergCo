@@ -2770,8 +2770,8 @@ alertnotify=echo %%s | mail -s &quot;Bergco Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+6"/>
-        <source>Listen for connections on &lt;port&gt; (default: 12088 or testnet: 24677)</source>
-        <translation>监听&lt;port&gt;端口的连接 (默认: 12088 测试网: 24677)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 12088 or testnet: 22088)</source>
+        <translation>监听&lt;port&gt;端口的连接 (默认: 12088 测试网: 22088)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2820,8 +2820,8 @@ alertnotify=echo %%s | mail -s &quot;Bergco Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+65"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 12089 or testnet: 24676)</source>
-        <translation>监听 &lt;port&gt; 端口的JSON-RPC连接 (默认: 12089 测试网: 24676)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 12089 or testnet: 22089)</source>
+        <translation>监听 &lt;port&gt; 端口的JSON-RPC连接 (默认: 12089 测试网: 22089)</translation>
     </message>
     <message>
         <location line="-17"/>
