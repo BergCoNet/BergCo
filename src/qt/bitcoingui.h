@@ -6,15 +6,6 @@
 
 #include <stdint.h>
 
-//    Uncomment to build BERG Adv
-//
-//#include "radio.h"
-//#include "bitcointalk.h"
-//#include "twitter.h"
-//#include "bittrex.h"
-//#include "coinexchange.h"
-//#include "yobit.h"
-
 class TransactionTableModel;
 class ClientModel;
 class WalletModel;
@@ -90,14 +81,6 @@ private:
     SignVerifyMessageDialog *signVerifyMessageDialog;
     MasternodeManager *masternodeManagerPage;
     MessagePage *messagePage;
-//    Uncomment to build BERG Adv
-//
-//    Radio *radioPage;
-//    Bitcointalk *bitcointalkPage;
-//    Twitter *twitterPage;
-//    Bittrex *bittrexPage;
-//    Coinexchange *coinexchangePage;
-//    Yobit *yobitPage;
     QLabel* netLabel;
     BlockBrowser *blockBrowser;
     QLabel *labelEncryptionIcon;
@@ -135,14 +118,6 @@ private:
     QAction *masternodeManagerAction;
     QAction *messageAction;
     QAction *blockAction;
-//    Uncomment to build BERG Adv
-//
-//    QAction *radioAction;
-//    QAction *bitcointalkAction;
-//    QAction *twitterAction;
-//    QAction *bittrexAction;
-//    QAction *coinexchangeAction;
-//    QAction *yobitAction;
 
     QSystemTrayIcon *trayIcon;
     Notificator *notificator;
@@ -225,20 +200,6 @@ private slots:
     void gotoVerifyMessageTab(QString addr = "");
     /** Switch to message page*/
     void gotoMessagePage();
-//    Uncomment to build BERG Adv
-//
-//    /** Switch to radio page */
-//    void gotoRadioPage();
-//    /** Switch to bitcointalk page */
-//    void gotoBitcointalkPage();
-//    /** Switch to twitter page */
-//    void gotoTwitterPage();
-//    /** Switch to bittrex page */
-//    void gotoBittrexPage();
-//    /** Switch to coinexchange page */
-//    void gotoCoinexchangePage();
-//    /** Switch to yobit page */
-//   void gotoYobitPage();
     /** Show configuration dialog */
     void optionsClicked();
     /** Show about dialog */
