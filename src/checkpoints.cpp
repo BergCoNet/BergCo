@@ -37,6 +37,8 @@ namespace Checkpoints
         ( 30000, uint256("0x8db099b3858644cf6d88980648f04be260c14381984c21468f4e889ea304d632"))
         ( 45000, uint256("0x9fa74886c23c94e51d87c60debf806bff5c7dad2b202b3bb5a150cc8112ef642"))
         ( 65547, uint256("0x373df38e28462cc2ce807ec8b340f7072afcd7b67b9c9b93278fef75cc29534f"))
+        ( 79415, uint256("0x8fb645b3fdd1fd2adf57a088c74e3d946b3025506ed3f16afc9c5583f4e02057"))
+        ( 90960, uint256("0x2db1cece02a452b27c5f19eecb527f9c66b52f25a10117ab6508307a26078aa7"))
 ;
 
     // TestNet has no checkpoints
