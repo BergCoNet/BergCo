@@ -2,11 +2,11 @@
 # -*- mode: makefile; coding: utf-8 -*-
 
 #DEB_MAKE_CHECK_TARGET = test_bergco
-#build/bitcoind::
+#build/bergcod::
 #	$(if $(filter nocheck,$(DEB_BUILD_OPTIONS)),,src/test_bergco)
 
-DEB_INSTALL_EXAMPLES_bitcoind += debian/examples/*
-DEB_INSTALL_MANPAGES_bitcoind += debian/manpages/*
+DEB_INSTALL_EXAMPLES_bergcod += debian/examples/*
+DEB_INSTALL_MANPAGES_bergcod += debian/manpages/*
 
 %:
 	dh --with bash-completion $@

@@ -36,7 +36,7 @@ public:
     bool useInstantX;
 };
 
-/** Interface to Bitcoin wallet from Qt view code. */
+/** Interface to Bergco wallet from Qt view code. */
 class WalletModel : public QObject
 {
     Q_OBJECT

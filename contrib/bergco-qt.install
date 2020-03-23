@@ -1,6 +1,6 @@
 usr/local/bin/bergco-qt usr/bin
-share/pixmaps/bitcoin32.xpm usr/share/pixmaps
-share/pixmaps/bitcoin16.xpm usr/share/pixmaps
+share/pixmaps/bergco32.xpm usr/share/pixmaps
+share/pixmaps/bergco16.xpm usr/share/pixmaps
 share/pixmaps/bergco-128.png usr/share/pixmaps
 debian/bergco-qt.desktop usr/share/applications
 debian/bergco-qt.protocol usr/share/kde4/services/

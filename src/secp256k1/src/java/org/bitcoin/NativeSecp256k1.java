@@ -1,4 +1,4 @@
-package org.bitcoin;
+package org.bergco;
 
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;

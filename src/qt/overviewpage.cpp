@@ -5,7 +5,7 @@
 #include "darksend.h"
 #include "darksendconfig.h"
 #include "walletmodel.h"
-#include "bitcoinunits.h"
+#include "bergcounits.h"
 #include "optionsmodel.h"
 #include "transactiontablemodel.h"
 #include "transactionfilterproxy.h"
@@ -26,7 +26,7 @@ class TxViewDelegate : public QAbstractItemDelegate
 {
     Q_OBJECT
 public:
-    TxViewDelegate(): QAbstractItemDelegate(), unit(BitcoinUnits::BTC)
+    TxViewDelegate(): QAbstractItemDelegate(), unit(BergcoUnits::BTC)
     {
 
     }
@@ -73,7 +73,7 @@ public:
             foreground = option.palette.color(QPalette::Text);
         }
         painter->setPen(fUseBlackTheme ? QColor(255, 255, 255) : foreground);
-        QString amountText = BitcoinUnits::formatWithUnit(unit, amount, true);
+        QString amountText = BergcoUnits::formatWithUnit(unit, amount, true);
         if(!confirmed)
         {
             amountText = QString("[") + amountText + QString("]");
@@ -185,12 +185,12 @@ void OverviewPage::setBalance(qint64 balance, qint64 stake, qint64 unconfirmedBa
     currentUnconfirmedBalance = unconfirmedBalance;
     currentImmatureBalance = immatureBalance;
     currentAnonymizedBalance = anonymizedBalance;
-    ui->labelBalance->setText(BitcoinUnits::formatWithUnit(unit, balance));
-    ui->labelStake->setText(BitcoinUnits::formatWithUnit(unit, stake));
-    ui->labelUnconfirmed->setText(BitcoinUnits::formatWithUnit(unit, unconfirmedBalance));
-    ui->labelImmature->setText(BitcoinUnits::formatWithUnit(unit, immatureBalance));
-    ui->labelTotal->setText(BitcoinUnits::formatWithUnit(unit, balance + stake + unconfirmedBalance + immatureBalance));
-    ui->labelAnonymized->setText(BitcoinUnits::formatWithUnit(unit, anonymizedBalance));
+    ui->labelBalance->setText(BergcoUnits::formatWithUnit(unit, balance));
+    ui->labelStake->setText(BergcoUnits::formatWithUnit(unit, stake));
+    ui->labelUnconfirmed->setText(BergcoUnits::formatWithUnit(unit, unconfirmedBalance));
+    ui->labelImmature->setText(BergcoUnits::formatWithUnit(unit, immatureBalance));
+    ui->labelTotal->setText(BergcoUnits::formatWithUnit(unit, balance + stake + unconfirmedBalance + immatureBalance));
+    ui->labelAnonymized->setText(BergcoUnits::formatWithUnit(unit, anonymizedBalance));
 
     // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
     // for the non-mining users
@@ -352,7 +352,7 @@ void OverviewPage::darkSendStatus()
 
         QString strSettings(" " + tr("Rounds"));
         strSettings.prepend(QString::number(nDarksendRounds)).prepend(" / ");
-        strSettings.prepend(BitcoinUnits::formatWithUnit(
+        strSettings.prepend(BergcoUnits::formatWithUnit(
             walletModel->getOptionsModel()->getDisplayUnit(),
             nAnonymizeBergcoAmount * COIN)
         );
@@ -477,7 +477,7 @@ void OverviewPage::toggleDarksend(){
         float minAmount = 1.49 * COIN;
         if(balance < minAmount){
             QString strMinAmount(
-                BitcoinUnits::formatWithUnit(
+                BergcoUnits::formatWithUnit(
                     walletModel->getOptionsModel()->getDisplayUnit(),
                     minAmount));
             QMessageBox::warning(this, tr("Darksend"),
