@@ -1,4 +1,4 @@
-// Copyright (c) 2009-2012 The Bitcoin developers
+// Copyright (c) 2009-2012 The Bergco developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -39,6 +39,11 @@ namespace Checkpoints
         ( 65547, uint256("0x373df38e28462cc2ce807ec8b340f7072afcd7b67b9c9b93278fef75cc29534f"))
         ( 79415, uint256("0x8fb645b3fdd1fd2adf57a088c74e3d946b3025506ed3f16afc9c5583f4e02057"))
         ( 90960, uint256("0x2db1cece02a452b27c5f19eecb527f9c66b52f25a10117ab6508307a26078aa7"))
+        ( 105003, uint256("0xd01be69971aa0b5d57be55efdc762161ca6049a42297277d78223c4dd1b7c1cf"))
+        ( 159641, uint256("0x714d660ccb695668ef0f08c50bb018ba78fd51d065c86a78589d128ddb2bfab4"))
+        ( 208936, uint256("0x70abdca85390afcf3f28005b80cea94f92ddb36181c7ec5bf29687e30de45fd7"))
+        ( 250612, uint256("0xe7fcd294c3b1643fb57ecc5c32505ae3a3f7e187d9046fe95873792f08beb520"))
+
 ;
 
     // TestNet has no checkpoints
