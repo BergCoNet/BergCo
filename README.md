@@ -1,4 +1,4 @@
-# BergCo Coin
+# BergCo Coin V1.2 ICE
 
 A clean currency to help inspire a cleaner world and way of creating an able asset to function.
 

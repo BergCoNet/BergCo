@@ -1,6 +1,6 @@
 TEMPLATE = app
 TARGET = Bergco
-VERSION = 1.1.1.1
+VERSION = 1.2
 INCLUDEPATH += src src/json src/qt src/qt/plugins/mrichtexteditor
 QT += core gui network printsupport
 DEFINES += ENABLE_WALLET
@@ -182,7 +182,6 @@ HEADERS += src/qt/bergcogui.h \
     src/base58.h \
     src/bignum.h \
     src/chainparams.h \
-    src/irc.h \
     src/chainparamsseeds.h \
     src/checkpoints.h \
     src/compat.h \
@@ -315,7 +314,6 @@ SOURCES += src/qt/bergco.cpp src/qt/bergcogui.cpp \
     src/qt/bergcoaddressvalidator.cpp \
     src/alert.cpp \
     src/chainparams.cpp \
-    src/irc.cpp \
     src/version.cpp \
     src/sync.cpp \
     src/txmempool.cpp \
